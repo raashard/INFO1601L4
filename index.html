@@ -6,12 +6,122 @@
 	<title>Document</title>
 </head>
 <style>
+	/* h1::first-letter {
+		color:blue;
+	} */
+
+	* {
+		box-sizing: border-box;
+
+	} 
+	body {
+		display: flex;
+	}
+
+	header, footer, section, aside, main{
+        padding: 1em;
+	}
+
+
+	header, footer{
+        color: white;
+        background-color:  #1976D2;
+        flex-grow: 1;
+	}
+
+	aside{
+        display: flex;
+        justify-content: center;
+        color: #212121;
+        background-color: #BBDEFB;
+        flex-grow: 3;
+	}
+	section	{
+        background-color: #FF4081;
+        color: white;
+        flex-grow: 1;
+        margin: 0.5em;
+	}
+
+	main{
+        background-color: #2196F3;
+        color: white;
+        flex-grow: 7;
+	}
+
+	body{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100vw;
+        margin:0;
+	}
+
+	.row{
+        display: flex;
+        flex-direction: row;
+	}
+
+	div.row{
+        flex-grow: 8;
+	}
+
+	.col{
+        display: flex;
+        flex-direction: column;
+	}
+
+	@media screen and (max-width: 600px) {
+  		div.row	{
+        flex-direction: column;
+   		}
+	}
+
+
+	/* #div1 {
+		width: 200px;
+		height: 200px;
+		background-color: aquamarine;
+		border-radius: 20px;
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+	}
+
+	#div2 {
+		width: 200px;
+		height: 200px;
+		margin-top: 100vh;
+		background-color: red;
+		border-radius: 20px;
+	}  */
+
+
 
 </style>
 <body>
-
-
-
+	<!-- <header>
+		<h1>
+			Welcome!
+		</h1>
+	</header> --> 
 	
+	<!-- <div id="div1"></div>
+	<div id="div2"></div> --> 
+
+
+	<header>Header</header>
+		<div class="row">
+            <aside class="col">
+                Aside
+                <section>Section 1</section>
+                <section>Section 2</section>
+       			</aside>
+        	<main>Main</main>
+		</div>
+
+	<footer>Footer</footer>
+
 </body>
 </html>
